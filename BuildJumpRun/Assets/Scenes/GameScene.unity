@@ -150,9 +150,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 30448883}
   - 212: {fileID: 30448884}
+  - 61: {fileID: 30448886}
   m_Layer: 0
   m_Name: Wall (9)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,7 +169,7 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 1747617389}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!212 &30448884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -196,6 +197,19 @@ SpriteRenderer:
   m_SortingOrder: -10
   m_Sprite: {fileID: 21301708, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &30448886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30448882}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &42057771
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,9 +373,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 56931814}
   - 212: {fileID: 56931815}
+  - 61: {fileID: 56931817}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,6 +419,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301704, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &56931817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56931813}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &66577305
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +539,74 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300474, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &73126467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 73126468}
+  - 212: {fileID: 73126470}
+  - 61: {fileID: 73126469}
+  m_Layer: 0
+  m_Name: roguelikeSheet_transparent_237 (4)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &73126468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73126467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.640000343, y: -2.53999996, z: .25999999}
+  m_LocalScale: {x: 4, y: 20, z: 4}
+  m_Children: []
+  m_Father: {fileID: 1747617389}
+  m_RootOrder: 7
+--- !u!61 &73126469
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73126467}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .159999996}
+--- !u!212 &73126470
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73126467}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -11
+  m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &73368552
 GameObject:
@@ -1709,9 +1805,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 328782995}
   - 212: {fileID: 328782996}
+  - 61: {fileID: 328782998}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1754,6 +1851,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &328782998
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328782994}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &333910411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,9 +2129,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 447577119}
   - 212: {fileID: 447577120}
+  - 61: {fileID: 447577122}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2064,6 +2175,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301482, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &447577122
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447577118}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &454377415
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,9 +3203,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 691042746}
   - 212: {fileID: 691042747}
+  - 61: {fileID: 691042749}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3124,6 +3249,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301478, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &691042749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 691042745}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &693983960
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3412,14 @@ Prefab:
     - target: {fileID: 482298, guid: 9a333b1abfd914dccacc10bd931e2398, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421528, guid: 9a333b1abfd914dccacc10bd931e2398, type: 2}
+      propertyPath: maxSpawnTimer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11421528, guid: 9a333b1abfd914dccacc10bd931e2398, type: 2}
+      propertyPath: timerDecrementAmount
+      value: .129999995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a333b1abfd914dccacc10bd931e2398, type: 2}
@@ -4467,9 +4613,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 974894213}
   - 212: {fileID: 974894214}
+  - 61: {fileID: 974894216}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4512,6 +4659,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &974894216
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974894212}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &981325651
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,6 +5035,74 @@ Transform:
   - {fileID: 1970307920}
   m_Father: {fileID: 391902138}
   m_RootOrder: 8
+--- !u!1 &1080208983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1080208984}
+  - 212: {fileID: 1080208986}
+  - 61: {fileID: 1080208985}
+  m_Layer: 0
+  m_Name: roguelikeSheet_transparent_237 (3)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1080208984
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080208983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .639999986, y: -3.81999993, z: .25999999}
+  m_LocalScale: {x: 4, y: 20, z: 4}
+  m_Children: []
+  m_Father: {fileID: 2065837160}
+  m_RootOrder: 8
+--- !u!61 &1080208985
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080208983}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .159999996}
+--- !u!212 &1080208986
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080208983}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -11
+  m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1084217158
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,9 +5464,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1149879621}
   - 212: {fileID: 1149879622}
+  - 61: {fileID: 1149879624}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5281,6 +5510,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301482, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1149879624
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149879620}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1154697043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5722,9 +5964,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1237471939}
   - 212: {fileID: 1237471940}
+  - 61: {fileID: 1237471942}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5767,6 +6010,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301704, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1237471942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1237471938}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1001 &1240043233
 Prefab:
   m_ObjectHideFlags: 0
@@ -5805,6 +6061,14 @@ Prefab:
     - target: {fileID: 471000, guid: 84474a928d7cd49e3a8443f55c2151ad, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471020, guid: 84474a928d7cd49e3a8443f55c2151ad, type: 2}
+      propertyPath: maxSpawnTimer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 11471020, guid: 84474a928d7cd49e3a8443f55c2151ad, type: 2}
+      propertyPath: timerDecrementAmount
+      value: .129999995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 84474a928d7cd49e3a8443f55c2151ad, type: 2}
@@ -5867,6 +6131,48 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 446266, guid: a30736c5878ec403eb51408e7bc58671, type: 2}
   m_PrefabInternal: {fileID: 1244796885}
+--- !u!1001 &1258913772
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410510, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8680c608bd21a493b957ee727384f0ef, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1265866636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5915,9 +6221,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1281075946}
   - 212: {fileID: 1281075947}
+  - 61: {fileID: 1281075949}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5960,6 +6267,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301482, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1281075949
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1281075945}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1287733429
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,9 +7047,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1483553083}
   - 212: {fileID: 1483553084}
+  - 61: {fileID: 1483553086}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (11)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6772,6 +7093,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301482, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1483553086
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483553082}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1524875578
 GameObject:
   m_ObjectHideFlags: 0
@@ -7051,9 +7385,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1567318958}
   - 212: {fileID: 1567318959}
+  - 61: {fileID: 1567318961}
   m_Layer: 0
   m_Name: Wall (8)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7097,6 +7432,19 @@ SpriteRenderer:
   m_SortingOrder: -10
   m_Sprite: {fileID: 21301708, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1567318961
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1567318957}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1581652620
 GameObject:
   m_ObjectHideFlags: 0
@@ -7430,9 +7778,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1713470627}
   - 212: {fileID: 1713470628}
+  - 61: {fileID: 1713470630}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7475,6 +7824,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301478, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1713470630
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713470626}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1722326743
 GameObject:
   m_ObjectHideFlags: 0
@@ -7615,6 +7977,7 @@ Transform:
   - {fileID: 2098768964}
   - {fileID: 974894213}
   - {fileID: 1567318958}
+  - {fileID: 73126468}
   - {fileID: 30448883}
   m_Father: {fileID: 1396450545}
   m_RootOrder: 1
@@ -7789,9 +8152,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1818500019}
   - 212: {fileID: 1818500020}
+  - 61: {fileID: 1818500022}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7834,6 +8198,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1818500022
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818500018}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1818591053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7996,6 +8373,84 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21300474, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1875353637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1875353640}
+  - 212: {fileID: 1875353639}
+  - 114: {fileID: 1875353638}
+  m_Layer: 0
+  m_Name: Loot
+  m_TagString: Loot
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1875353638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875353637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8777e8dd2c25642338a029aecb6adef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  publicLootSprites:
+  - {fileID: 21301186, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301188, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301190, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301192, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301194, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301294, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301296, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301298, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301300, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  - {fileID: 21301302, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  maxLifeTimer: 1.5
+--- !u!212 &1875353639
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875353637}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21301056, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1875353640
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875353637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1876397286
 GameObject:
   m_ObjectHideFlags: 0
@@ -8383,9 +8838,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1930619294}
   - 212: {fileID: 1930619295}
+  - 61: {fileID: 1930619297}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (12)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8428,6 +8884,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301478, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1930619297
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1930619293}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1935089826
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,9 +8906,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1935089827}
   - 212: {fileID: 1935089828}
+  - 61: {fileID: 1935089830}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8482,6 +8952,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301588, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &1935089830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935089826}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &1937754988
 GameObject:
   m_ObjectHideFlags: 0
@@ -9133,6 +9616,7 @@ Transform:
   - {fileID: 447577119}
   - {fileID: 1237471939}
   - {fileID: 56931814}
+  - {fileID: 1080208984}
   m_Father: {fileID: 1396450545}
   m_RootOrder: 2
 --- !u!1 &2069913985
@@ -9306,9 +9790,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 2098768964}
   - 212: {fileID: 2098768965}
+  - 61: {fileID: 2098768967}
   m_Layer: 0
   m_Name: roguelikeSheet_transparent_237 (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9351,6 +9836,19 @@ SpriteRenderer:
   m_SortingOrder: -11
   m_Sprite: {fileID: 21301478, guid: 2d5c8ff61851248018f09f06623e2b82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!61 &2098768967
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098768963}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .140000001, y: .140000001}
 --- !u!1 &2101593057
 GameObject:
   m_ObjectHideFlags: 0

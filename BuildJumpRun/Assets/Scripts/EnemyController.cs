@@ -38,7 +38,7 @@ public class EnemyController : MonoBehaviour
 	public void DestroyObject()
 	{
 		//TODO: PlayParticleEffect
-		Destroy (gameObject);
+		Destroy(gameObject);
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------

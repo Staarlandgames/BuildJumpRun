@@ -6,19 +6,9 @@ public class CitizenController : MonoBehaviour
 	public float movementSpeed = -1.0f;
 
 	private bool acquiredLoot = false;
-	//---------------------------------------------------------
-	//---------------------------------------------------------
-	void Start () 
-	{
-		
-	}
+
+	public GameObject particleEmitterPrefab;
 	
-	//---------------------------------------------------------
-	//---------------------------------------------------------
-	void Update () 
-	{
-		
-	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void FixedUpdate () 
@@ -37,6 +27,8 @@ public class CitizenController : MonoBehaviour
 	//---------------------------------------------------------
 	public void DestroyObject()
 	{
+		GameObject particleEmitter = Instantiate<GameObject> (particleEmitterPrefab);
+		particleEmitter.transform.position = gameObject.transform.position;
 		//TODO: PlayParticleEffect
 		//TODO: NotifyScoreController
 		Destroy (gameObject);

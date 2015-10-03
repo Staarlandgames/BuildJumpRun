@@ -8,12 +8,12 @@ public class CitizenSpawner : MonoBehaviour
 
 	//Const variables
 	public float maxSpawnTimer = 3.0f;
-	public const float doorTimer = 0.25f;
-	public const float minimumSpawnTimer = 1.25f;
-	public const float timerDecrementAmount = 0.15f;
-	public const float maxCitizenSpeed = 1.5f;
-	public const float minCitizenSpeed = 1.0f;
-	public const float speedDecrementAmount = 0.05f;
+	public float doorTimer = 0.25f;
+	public float minimumSpawnTimer = 1.25f;
+	public float timerDecrementAmount = 0.15f;
+	public float maxCitizenSpeed = 1.5f;
+	public float minCitizenSpeed = 1.0f;
+	public float speedDecrementAmount = 0.05f;
 	public bool overrideLock = false;
 
 	public Sprite[] doorClosedSprites;
