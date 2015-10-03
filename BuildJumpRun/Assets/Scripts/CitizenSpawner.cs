@@ -10,6 +10,8 @@ public class CitizenSpawner : MonoBehaviour
 	public float timerDecrementAmount = 0.15f;
 	public float startCitizenSpeed = 1.5f;
 
+	public Sprite[] doorSprites;
+
 	private float timer = 0.0f; 
 	//---------------------------------------------------------
 	//---------------------------------------------------------
