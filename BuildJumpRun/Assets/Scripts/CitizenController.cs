@@ -39,7 +39,7 @@ public class CitizenController : MonoBehaviour
 	{
 		//TODO: PlayParticleEffect
 		//TODO: NotifyScoreController
-		Destroy (this);
+		Destroy (gameObject);
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -50,7 +50,7 @@ public class CitizenController : MonoBehaviour
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
-	void OnCollisionEnter(Collision in_object)
+	void OnCollisionEnter2D(Collision2D in_object)
 	{
 		if (in_object.gameObject.tag == "Enemy" || in_object.gameObject.tag == "StaticHazard") 
 		{

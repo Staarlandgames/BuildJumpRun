@@ -34,8 +34,6 @@ public class CharacterGenerator : MonoBehaviour
 		GenerateHead ();
 		GenerateTorso ();
 		GenerateTrousers ();
-
-		ApplySprites ();
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -62,24 +60,37 @@ public class CharacterGenerator : MonoBehaviour
 	//---------------------------------------------------------
 	void GenerateHead ()
 	{
-		//TODO: Select Sprites
+		int spriteIndex = Random.Range (0, publicHeadSprites.Length);
+		
+		if (spriteIndex >= publicHeadSprites.Length) 
+		{
+			spriteIndex = 0;
+		}
+
+		headObject.GetComponent<SpriteRenderer> ().sprite = publicHeadSprites [spriteIndex];
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void GenerateTorso ()
 	{
-		//TODO: Select Sprites
-	}
+		int spriteIndex = Random.Range (0, publicTorsoSprites.Length);
+		
+		if (spriteIndex >= publicTorsoSprites.Length) 
+		{
+			spriteIndex = 0;
+		}
+		
+		torsoObject.GetComponent<SpriteRenderer> ().sprite = publicTorsoSprites [spriteIndex];	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void GenerateTrousers ()
 	{
-		//TODO: Select Sprites
-	}
-	//---------------------------------------------------------
-	//---------------------------------------------------------
-	void ApplySprites ()
-	{
-
-	}
+		int spriteIndex = Random.Range (0, publicTrousersSprites.Length);
+		
+		if (spriteIndex >= publicTrousersSprites.Length) 
+		{
+			spriteIndex = 0;
+		}
+		
+		trousersObject.GetComponent<SpriteRenderer> ().sprite = publicTrousersSprites [spriteIndex];	}
 }
