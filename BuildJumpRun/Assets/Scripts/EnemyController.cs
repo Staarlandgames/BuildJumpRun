@@ -6,19 +6,10 @@ public class EnemyController : MonoBehaviour
 	public float movementSpeed = -1.0f;
 
 	private bool hasLoot = false;
-	//---------------------------------------------------------
-	//---------------------------------------------------------
-	void Start () 
-	{
-		
-	}
+
+	public GameObject particleEmitterPrefab;
+	public GameObject lootObject;
 	
-	//---------------------------------------------------------
-	//---------------------------------------------------------
-	void Update () 
-	{
-		
-	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void FixedUpdate () 
@@ -38,6 +29,14 @@ public class EnemyController : MonoBehaviour
 	public void DestroyObject()
 	{
 		//TODO: PlayParticleEffect
+		GameObject particleEmitter = Instantiate<GameObject> (particleEmitterPrefab);
+		particleEmitter.transform.position = gameObject.transform.position;
+
+		if (hasLoot) 
+		{
+			GameObject loot = Instantiate<GameObject> (lootObject);
+			lootObject.transform.position = gameObject.transform.position;
+		}
 		Destroy(gameObject);
 	}
 	//---------------------------------------------------------

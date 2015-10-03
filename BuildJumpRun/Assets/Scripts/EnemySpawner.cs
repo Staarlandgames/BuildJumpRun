@@ -11,7 +11,8 @@ public class EnemySpawner : MonoBehaviour
 	public float speedMultiplier = -1.0f;
 	public float minimumSpawnTimer = 3.0f;
 	public float timerDecrementAmount = 0.15f;
-	public float maxEnemySpeed = 1.5f;
+	public float maxEnemySpeed = 2.0f;
+	public float minEnemySpeed = 1.5f;
 	public bool overrideLock = false;
 	
 	public Sprite[] doorOpenSprites;
@@ -79,8 +80,12 @@ public class EnemySpawner : MonoBehaviour
 		GameObject newEnemy = Instantiate<GameObject> (EnemyGameObject);
 		newEnemy.transform.position = this.transform.position;
 
+		enemySpeed = Random.Range (minEnemySpeed, maxEnemySpeed);
+
 		//Set CitizenSpeed
 		newEnemy.GetComponent<EnemyController> ().SetMovementSpeed (enemySpeed * speedMultiplier);
+
+		GetComponentInChildren<AudioSource> ().Play();
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------

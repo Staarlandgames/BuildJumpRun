@@ -7,7 +7,8 @@ public class CitizenController : MonoBehaviour
 
 	private bool acquiredLoot = false;
 
-	public GameObject particleEmitterPrefab;
+	public GameObject deathParticleEmitterPrefab;
+	public GameObject lootParticleEmitterPrefab;
 	
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -27,7 +28,7 @@ public class CitizenController : MonoBehaviour
 	//---------------------------------------------------------
 	public void DestroyObject()
 	{
-		GameObject particleEmitter = Instantiate<GameObject> (particleEmitterPrefab);
+		GameObject particleEmitter = Instantiate<GameObject> (deathParticleEmitterPrefab);
 		particleEmitter.transform.position = gameObject.transform.position;
 		//TODO: PlayParticleEffect
 		//TODO: NotifyScoreController
@@ -38,7 +39,15 @@ public class CitizenController : MonoBehaviour
 	public void CollectLoot()
 	{
 		acquiredLoot = true;
+		GameObject particleEmitter = Instantiate<GameObject> (deathParticleEmitterPrefab);
+		particleEmitter.transform.position = gameObject.transform.position;
 		//TODO: PlayCollectParticleEffect
+	}
+	//---------------------------------------------------------
+	//---------------------------------------------------------
+	public void Score()
+	{
+		//TODO:
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -51,6 +60,10 @@ public class CitizenController : MonoBehaviour
 		else if (in_object.gameObject.tag == "Loot") 
 		{
 			this.CollectLoot();
+		}
+		else if (in_object.gameObject.tag == "Wall") 
+		{
+			this.Score();
 		}
 	}
 }

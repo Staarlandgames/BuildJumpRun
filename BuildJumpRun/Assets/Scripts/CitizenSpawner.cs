@@ -107,6 +107,8 @@ public class CitizenSpawner : MonoBehaviour
 
 		//Set CitizenSpeed
 		newCitizen.GetComponent<CitizenController> ().SetMovementSpeed (-citizenSpeed);
+
+		GetComponentInChildren<AudioSource> ().Play();
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------

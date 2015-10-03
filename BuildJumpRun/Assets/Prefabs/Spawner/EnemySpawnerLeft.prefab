@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 482298}
   - 212: {fileID: 21209740}
   - 114: {fileID: 11421528}
+  - 82: {fileID: 8204874}
   m_Layer: 0
   m_Name: EnemySpawnerLeft
   m_TagString: Untagged
@@ -29,6 +30,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!82 &8204874
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169914}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 26339094ad76a4be2acc8162fc7be4ca, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .676999986
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11421528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -41,11 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyGameObject: {fileID: 105348, guid: be29dec23ae174f36a41b1ffa93581c0, type: 2}
-  maxSpawnTimer: 10
+  maxSpawnTimer: 11
   speedMultiplier: 1
   minimumSpawnTimer: 3
-  timerDecrementAmount: .150000006
+  timerDecrementAmount: .129999995
   maxEnemySpeed: 1.5
+  minEnemySpeed: 1.5
   overrideLock: 1
   doorOpenSprites: []
 --- !u!212 &21209740
@@ -96,6 +167,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: overrideLock
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .676999986
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

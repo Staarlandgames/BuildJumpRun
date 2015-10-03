@@ -160,6 +160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: -1
+  particleEmitterPrefab: {fileID: 114498, guid: c47871327eee14a138ccfb3ab9d8131a,
+    type: 2}
+  lootObject: {fileID: 115532, guid: de27711de2d464335aca38fbc653e5fe, type: 2}
 --- !u!114 &11479590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -674,6 +677,14 @@ Prefab:
       propertyPath: m_Size.y
       value: .150000006
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: particleEmitterPrefab
+      value: 
+      objectReference: {fileID: 114498, guid: c47871327eee14a138ccfb3ab9d8131a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: lootObject
+      value: 
+      objectReference: {fileID: 115532, guid: de27711de2d464335aca38fbc653e5fe, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105348}
