@@ -9,7 +9,16 @@ public class CitizenController : MonoBehaviour
 
 	public GameObject deathParticleEmitterPrefab;
 	public GameObject lootParticleEmitterPrefab;
-	
+	public GameObject successParticleEmitterPrefab;
+
+	private GameObject scoreController;
+
+	//---------------------------------------------------------
+	//---------------------------------------------------------
+	void Start () 
+	{
+		scoreController = GameObject.FindGameObjectWithTag ("ScoreController");
+	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void FixedUpdate () 
@@ -30,8 +39,6 @@ public class CitizenController : MonoBehaviour
 	{
 		GameObject particleEmitter = Instantiate<GameObject> (deathParticleEmitterPrefab);
 		particleEmitter.transform.position = gameObject.transform.position;
-		//TODO: PlayParticleEffect
-		//TODO: NotifyScoreController
 		Destroy (gameObject);
 	}
 	//---------------------------------------------------------
@@ -41,13 +48,24 @@ public class CitizenController : MonoBehaviour
 		acquiredLoot = true;
 		GameObject particleEmitter = Instantiate<GameObject> (deathParticleEmitterPrefab);
 		particleEmitter.transform.position = gameObject.transform.position;
-		//TODO: PlayCollectParticleEffect
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	public void Score()
 	{
-		//TODO:
+		var controller = scoreController.GetComponent<ScoreController> ();
+
+		controller.AddScore(10);
+
+		if (acquiredLoot) 
+		{
+			controller.AddScore(20);
+		}
+
+		GameObject particleEmitter = Instantiate<GameObject> (successParticleEmitterPrefab);
+		particleEmitter.transform.position = gameObject.transform.position;
+
+		Destroy (gameObject);
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -55,6 +73,9 @@ public class CitizenController : MonoBehaviour
 	{
 		if (in_object.gameObject.tag == "Enemy" || in_object.gameObject.tag == "StaticHazard") 
 		{
+			var controller = scoreController.GetComponent<ScoreController> ();
+			
+			controller.RemoveLives();
 			this.DestroyObject();
 		}
 		else if (in_object.gameObject.tag == "Loot") 

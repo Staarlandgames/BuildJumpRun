@@ -244,6 +244,8 @@ MonoBehaviour:
     type: 2}
   lootParticleEmitterPrefab: {fileID: 114498, guid: 7e0890945cf064f5193911ede9ddab69,
     type: 2}
+  successParticleEmitterPrefab: {fileID: 160546, guid: cf1a2f4a69e3d41a49cf67af198437cc,
+    type: 2}
 --- !u!212 &21211858
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -639,6 +641,10 @@ Prefab:
       propertyPath: lootParticleEmitterPrefab
       value: 
       objectReference: {fileID: 114498, guid: 7e0890945cf064f5193911ede9ddab69, type: 2}
+    - target: {fileID: 0}
+      propertyPath: successParticleEmitterPrefab
+      value: 
+      objectReference: {fileID: 160546, guid: cf1a2f4a69e3d41a49cf67af198437cc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105348}

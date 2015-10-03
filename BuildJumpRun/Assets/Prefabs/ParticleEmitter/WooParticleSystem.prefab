@@ -1,46 +1,46 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &114498
+--- !u!1 &160546
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 452820}
-  - 198: {fileID: 19883392}
-  - 199: {fileID: 19999398}
-  - 114: {fileID: 11451426}
-  - 82: {fileID: 8294582}
+  - 4: {fileID: 443918}
+  - 198: {fileID: 19886486}
+  - 199: {fileID: 19959716}
+  - 114: {fileID: 11420474}
+  - 82: {fileID: 8286496}
   m_Layer: 0
-  m_Name: LootParticleSystem
+  m_Name: WooParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &452820
+--- !u!4 &443918
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114498}
+  m_GameObject: {fileID: 160546}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!82 &8294582
+--- !u!82 &8286496
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114498}
+  m_GameObject: {fileID: 160546}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7922754a1c2be44b894eda1798e82deb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 87f924f3f3a144d16bdff1662b1958c9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -100,24 +100,24 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11451426
+--- !u!114 &11420474
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114498}
+  m_GameObject: {fileID: 160546}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28be3a2b059e94091a07ba44d2df533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxLifeTimer: 3
---- !u!198 &19883392
+--- !u!198 &19886486
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114498}
+  m_GameObject: {fileID: 160546}
   lengthInSec: 1
   startDelay: 0
   speed: 1
@@ -129,7 +129,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .720000029
+      scalar: 1.05999994
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -162,7 +162,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: 1.5
+      scalar: .430000007
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -286,10 +286,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294967295
+        rgba: 4289222546
       minMaxState: 0
     startSize:
-      scalar: .589999974
+      scalar: 1.10000002
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1165,17 +1165,17 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19999398
+--- !u!199 &19959716
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114498}
+  m_GameObject: {fileID: 160546}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 799d853421cc2460f91cad9e7f82a0ba, type: 2}
+  - {fileID: 2100000, guid: 82179238c02cb45c3b5878f93266ab4a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -1209,22 +1209,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: maxLifeTimer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 7922754a1c2be44b894eda1798e82deb, type: 3}
-    - target: {fileID: 0}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 82179238c02cb45c3b5878f93266ab4a, type: 2}
+      objectReference: {fileID: 8300000, guid: 87f924f3f3a144d16bdff1662b1958c9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 114498}
+  m_RootGameObject: {fileID: 160546}
   m_IsPrefabParent: 1

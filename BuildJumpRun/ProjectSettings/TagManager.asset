@@ -11,6 +11,7 @@ TagManager:
   - CitizenSpawner
   - EnemySpawner
   - Wall
+  - ScoreController
   layers:
   - Default
   - TransparentFX
