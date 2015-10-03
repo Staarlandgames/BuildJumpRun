@@ -4,8 +4,11 @@ using System.Collections;
 public class CharacterGenerator : MonoBehaviour 
 {
 	public Sprite[] publicBodySprites;
-	private Sprite[] bodySprites;
+	public Sprite[] publicHeadSprites;
+	public Sprite[] publicTorsoSprites;
+	public Sprite[] publicTrousersSprites;
 
+	private Sprite[] bodySprites;
 	public GameObject headObject;
 	public GameObject torsoObject;
 	public GameObject trousersObject;

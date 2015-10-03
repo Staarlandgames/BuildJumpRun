@@ -7,12 +7,12 @@ public class CitizenSpawner : MonoBehaviour
 	public GameObject CitizenGameObject;
 
 	//Const variables
-	public const float maxSpawnTimer = 3.0f;
+	public float maxSpawnTimer = 3.0f;
 	public const float doorTimer = 0.25f;
-	public const float minimumSpawnTimer = 1.0f;
+	public const float minimumSpawnTimer = 1.25f;
 	public const float timerDecrementAmount = 0.15f;
 	public const float maxCitizenSpeed = 1.5f;
-	public const float minCitizenSpeed = 0.5f;
+	public const float minCitizenSpeed = 1.0f;
 	public const float speedDecrementAmount = 0.05f;
 	public bool overrideLock = false;
 
