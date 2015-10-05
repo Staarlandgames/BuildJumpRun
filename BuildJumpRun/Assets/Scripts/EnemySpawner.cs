@@ -14,6 +14,8 @@ public class EnemySpawner : MonoBehaviour
 	public float maxEnemySpeed = 2.0f;
 	public float minEnemySpeed = 1.5f;
 	public bool overrideLock = false;
+
+	public int chanceLoot = 50;
 	
 	public Sprite[] doorOpenSprites;
 
@@ -82,8 +84,15 @@ public class EnemySpawner : MonoBehaviour
 
 		enemySpeed = Random.Range (minEnemySpeed, maxEnemySpeed);
 
+		int rand = Random.Range (0, 100);
+
 		//Set CitizenSpeed
 		newEnemy.GetComponent<EnemyController> ().SetMovementSpeed (enemySpeed * speedMultiplier);
+
+		if (rand > chanceLoot) 
+		{
+			newEnemy.GetComponent<EnemyController> ().HasLoot();
+		}
 
 		GetComponentInChildren<AudioSource> ().Play();
 	}

@@ -45,9 +45,11 @@ public class CitizenController : MonoBehaviour
 	//---------------------------------------------------------
 	public void CollectLoot()
 	{
+		Debug.Log ("Has Loot");
 		acquiredLoot = true;
 		GameObject particleEmitter = Instantiate<GameObject> (deathParticleEmitterPrefab);
 		particleEmitter.transform.position = gameObject.transform.position;
+		scoreController.GetComponent<ScoreController> ().AddScore(10);
 	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
@@ -59,7 +61,7 @@ public class CitizenController : MonoBehaviour
 
 		if (acquiredLoot) 
 		{
-			controller.AddScore(20);
+			controller.AddScore(10);
 		}
 
 		GameObject particleEmitter = Instantiate<GameObject> (successParticleEmitterPrefab);

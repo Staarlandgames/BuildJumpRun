@@ -9,7 +9,40 @@ public class EnemyController : MonoBehaviour
 
 	public GameObject particleEmitterPrefab;
 	public GameObject lootObject;
-	
+
+	public Collider collider;
+
+	//---------------------------------------------------------
+	//---------------------------------------------------------
+	void Update () 
+	{
+		Vector2 position = new Vector2 (10000.0f, 100000.0f);
+		bool changed = false;
+		if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began) 
+		{
+			changed = true;
+			position = Input.GetTouch (0).position;
+		} 
+		else if (Input.GetMouseButtonDown(0))
+		{
+			changed = true;
+			position = Input.mousePosition;
+		}
+
+		if (!changed) 
+		{
+			return;
+		}
+
+		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100000);
+		if(hit.collider != null)
+		{
+			if(hit.collider.gameObject == this.gameObject)
+			{
+				this.DestroyObject();
+			}
+		}
+	}
 	//---------------------------------------------------------
 	//---------------------------------------------------------
 	void FixedUpdate () 
@@ -35,7 +68,7 @@ public class EnemyController : MonoBehaviour
 		if (hasLoot) 
 		{
 			GameObject loot = Instantiate<GameObject> (lootObject);
-			lootObject.transform.position = gameObject.transform.position;
+			loot.transform.position = gameObject.transform.position;
 		}
 		Destroy(gameObject);
 	}

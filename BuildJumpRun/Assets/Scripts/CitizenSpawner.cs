@@ -69,6 +69,7 @@ public class CitizenSpawner : MonoBehaviour
 		else 
 		{
 			SetDoorSprite(doorClosedSprites[doorIndex]);
+			timer = spawnTimer;
 		}
 	}
 	//---------------------------------------------------------
